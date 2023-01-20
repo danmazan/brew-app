@@ -1,12 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a626817c21.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Brew App</title>
 </head>
+
 <body>
-    
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <i class="fa-solid fa-image"></i>
+                Brew App
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#features" class="nav-link">What</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#pricing" class="nav-link">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#footer" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- title section -->
+    <section id="title">
+        <div class="row">
+            <div class="col-lg-6">
+                <h1 class="main-heading">This is a title of a web page</h1>
+            </div>
+            <div class="col-lg-6">
+                <img src="images/dummy.png" alt="title-img" class="title-img">
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- tutorial section -->
+    <section id="tutorial">
+
+    </section>
+
+    <!-- features section -->
+    <section id="features">
+        <div class="row">
+            <div class="col-lg-4">
+                <i class="fa-solid fa-image"></i>
+                <h2 class="feature-heading">Feature of a product</h2>
+                <p>Feature description</p>
+            </div>
+            <div class="col-lg-4">
+                <i class="fa-solid fa-image"></i>
+                <h2 class="feature-heading">Feature of a product</h2>
+                <p>Feature description</p>
+            </div>
+            <div class="col-lg-4">
+                <i class="fa-solid fa-image"></i>
+                <h2 class="feature-heading">Feature of a product</h2>
+                <p>Feature description</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- testimonials (?) section-->
+    <section id="testimonials">
+
+        <div id="testimonial" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#testimonial" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="First slide"></li>
+                <li data-bs-target="#testimonial" data-bs-slide-to="1" aria-label="Second slide"></li>
+                <li data-bs-target="#testimonial" data-bs-slide-to="2" aria-label="Third slide"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img src="images/dummy.png" class="w-100 d-block" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/dummy.png" class="w-100 d-block" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/dummy.png" class="w-100 d-block" alt="Third slide">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonial" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonial" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+    </section>
+
+    <!-- Pricing information -->
+    <section id="pricing">
+        <h2>These are the pricing plans</h2>
+        <p>Encouragement message for pricing list</p>
+
+        <div class="card">
+            <img class="card-img-top" src="holder.js/100x180/" alt="Title">
+            <div class="card-body">
+                <h4 class="card-title">Title</h4>
+                <p class="card-text">Text</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img-top" src="holder.js/100x180/" alt="Title">
+            <div class="card-body">
+                <h4 class="card-title">Title</h4>
+                <p class="card-text">Text</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- CTA section -->
+    <section id="cta">
+        <h2 class="cta-text">Call to action!!!</h2>
+        <button class="download-google">Download</button>
+        <button class="download-apple">Download</button>
+    </section>
+
+    <!-- footer -->
+    <section id="footer">
+        <!-- icons goes here -->
+        <p>© Copyright BrewApp</p>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>
