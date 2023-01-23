@@ -1,11 +1,68 @@
 body{
-    background-color: aliceblue;
+    background-color: #f8f9fa;
+    text-align: center;
 }
 
-h1{
-    font-size: x-large;
+h1, h2, h3, h4, h5, h6{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 900;
 }
 
-h2{
-    font-size: large;
+
+.container-fluid{
+    padding: 7% 15%;
+}
+
+.navbar{
+    padding: 1% 5%;
+}
+
+.navbar-brand{
+    font-size: 1.5rem;
+}
+
+.nav-item{
+    font-size: 1.2rem;
+}
+
+.icon{
+    margin-bottom: 1rem;
+}
+
+.icon:hover{
+    color:aliceblue;
+}
+
+/* sections */
+.white-section{
+    color: #2D6EFD;
+    background-color: #f8f9fa;
+}
+
+.blue-section{
+    color: #f8f9fa;
+    background-color: #2D6EFD;
+}
+
+/* title section */
+#title{
+    text-align: left;
+}
+.main-heading{
+    color: #2D6EFD;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+.input-group{
+    width: 400px;
+}
+
+.card{
+    color: #2D6EFD;
+}
+
+/* footer section */
+.footer-icon{
+    margin: 20px 10px;
 }
