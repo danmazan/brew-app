@@ -62,7 +62,36 @@ h1, h2, h3, h4, h5, h6{
     color: #2D6EFD;
 }
 
+/* Feature section */
+.feature-box{
+    background-color: #003ec2;
+}
+
 /* footer section */
 .footer-icon{
     margin: 20px 10px;
+}
+
+
+/* css transitions */
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.feature-box:nth-child(2){
+    transition-delay: 200ms;
+}
+
+.feature-box:nth-child(3){
+    transition-delay: 400ms;
 }
