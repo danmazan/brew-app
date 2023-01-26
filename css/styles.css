@@ -95,3 +95,21 @@ h1, h2, h3, h4, h5, h6{
 .feature-box:nth-child(3){
     transition-delay: 400ms;
 }
+
+/* Demo CSS */
+/* 
+.timer{
+    position: relative;
+    width: 92%;
+    background: #ffffff;
+    left: 4%;
+    padding: 40px 0;
+    font-family: ‘Roboto mono’,monospace;
+    color: #0381bb;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0,139,253,0.25);
+} */
