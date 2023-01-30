@@ -2,25 +2,8 @@ let [miliseconds, seconds, minutes] = [0, 0, 0];
 let timerRef = $(".timer");
 let int = null;
 
-$(".btn-start").click(function () {
-    if (int !== null) {
-        clearInterval(int);
-    }
-    $(".btn-start").attr("disabled", "disabled");
-    int = setInterval(displayTimer, 10);
-});
 
-// $(".btn-stop").click(function () {
-//     clearInterval(int);
-// })
 
-$(".btn-restart").click(function () {
-    clearInterval(int);
-    [miliseconds, seconds, minutes] = [0, 0, 0];
-    timerRef.text("00 : 00");
-    $(".instruction").html("<p>Pour <em class='grams'>50g</em> of water to bloom</p>");
-    $(".btn-start").removeAttr("disabled");
-})
 
 function displayTimer() {
     miliseconds += 10;
@@ -32,6 +15,7 @@ function displayTimer() {
             minutes++;
         }
     }
+    
     let m = minutes < 10 ? "0" + minutes : minutes;
     let s = seconds < 10 ? "0" + seconds : seconds;
     // let ms = miliseconds < 10 ? "00" + miliseconds : miliseconds < 100 ? "0" + miliseconds : miliseconds;
@@ -42,6 +26,8 @@ function displayTimer() {
 }
 
 function changeInstruction(minute, second) {
+
+    //TODO: Would need to refactor this for different recipes
     if (minute == 00 && second == 10) {
         $(".instruction").html("<p>Gently swirl</p>");
     }
@@ -80,3 +66,26 @@ function changeInstruction(minute, second) {
         clearInterval(int);
     }
 }
+
+
+
+
+$(".btn-start").click(function () {
+    if (int !== null) {
+        clearInterval(int);
+    }
+    $(".btn-start").attr("disabled", "disabled");
+    int = setInterval(displayTimer, 10);
+});
+
+// $(".btn-stop").click(function () {
+//     clearInterval(int);
+// })
+
+$(".btn-restart").click(function () {
+    clearInterval(int);
+    [miliseconds, seconds, minutes] = [0, 0, 0];
+    timerRef.text("00 : 00");
+    $(".instruction").html("<p>Pour <em class='grams'>50g</em> of water to bloom</p>");
+    $(".btn-start").removeAttr("disabled");
+});
