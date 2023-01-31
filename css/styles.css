@@ -63,9 +63,6 @@ h1, h2, h3, h4, h5, h6{
 }
 
 /* Feature section */
-.feature-box{
-    background-color: #003ec2;
-}
 
 /* footer section */
 .footer-icon{
@@ -75,14 +72,16 @@ h1, h2, h3, h4, h5, h6{
 
 /* css transitions */
 
-/* .hidden{
+.hiddenAnim{
+    display: none;
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
     transition: all 1s;
-} */
+}
 
-.show{
+.showAnim{
+    display: block;
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
@@ -109,6 +108,10 @@ h1, h2, h3, h4, h5, h6{
 
 .hidden{
     display: none;
+    /* opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s; */
 }
 
 /*Hoffman Demo CSS */
@@ -135,4 +138,12 @@ h1, h2, h3, h4, h5, h6{
 .btn-start, .btn-restart{
     width: 150px;
     height: 75px;
+}
+
+.step{
+    font-size: 2rem;
+}
+
+.steps{
+    justify-content: start;
 }

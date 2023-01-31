@@ -19,63 +19,116 @@
         </a>
     </nav>
 
-    <div id="homescreen" class="">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="main-heading">Welcome to brew app demo!</h1>
-                </div>
-                <div class="col-lg-12">
-                    <button class="btn btn-primary btn-lg btn-homescreen">Start Demo</button>
-                </div>
-            </div>
+    <div id="homescreen">
+        <div class="d-flex justify-content-center align-items-center">
+            <h1 class="main-heading">Welcome to brew app demo!</h1>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+            <button class="btn btn-primary btn-lg btn-homescreen">Start Demo</button>
         </div>
     </div>
 
     <div id="menu" class="hidden">
-        <div class="container-fluid">
-            <div class="row gy-5">
-                <div class="col-lg-12">
-                    <button class="btn btn-primary btn-lg btn-menu hoffman">
-                        Hoffman method
-                    </button>
-                </div>
-                <div class="col-lg-12">
-                    <button class="btn btn-primary btn-lg btn-menu takishi">
-                        Method 2
-                    </button>
-                </div>
-                <div class="col-lg-12">
-                    <button class="btn btn-primary btn-lg btn-menu cafec">
-                        Method 3
-                    </button>
-                </div>
-            </div>
+        <div class="d-flex justify-content-center align-items-center my-5">
+            <button class="btn btn-primary btn-lg btn-menu hoffman my-5">
+                James Hoffman
+            </button>
+        </div>
+        <div class="d-flex justify-content-center align-items-center my-5">
+            <button class="btn btn-primary btn-lg btn-menu kasuya my-5">
+                Tetsu Kasuya
+            </button>
+        </div>
+        <div class="d-flex justify-content-center align-items-center my-5">
+            <button class="btn btn-primary btn-lg btn-menu osmotic my-5">
+                Osmotic Flow
+            </button>
         </div>
     </div>
 
+    <!-- Prequisites pages -->
+
     <div id="hoffmanPreq" class="hidden">
-        <p>prequisites for james hoffman recipe</p>
+        <div class="d-flex justify-content-center align-items-center">
+            <h1>Prequisites</h1>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+            <ul class="steps">
+                <li class="step">fine grind the coffee beans</li>
+                <li class="step">rinse paper filter with hot tap water</li>
+                <li class="step">put coffee into v60</li>
+                <li class="step">dig a little mound in the middle</li>
+                <li class="step">zero your scale</li>
+                <li class="step">turn on the kettle for 100deg C</li>
+                <li class="step">start timer as soon as the kettle boiles</li>
+            </ul>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+            <button class="btn btn-primary btn-lg btn-next hoffman">Next</button>
+        </div>
+        
+
     </div>
 
+    <div id="kasuyaPreq" class="hidden">
+        <p>prequisites for TETSU KASUYA recipe</p>
+        <button class="btn btn-primary btn-lg btn-next kasuya">Next</button>
+    </div>
+
+    <div id="osmoticPreq" class="hidden">
+        <p>prequisites for OSMOTIC FLOW recipe</p>
+        <button class="btn btn-primary btn-lg btn-next osmotic">Next</button>
+    </div>
+
+    <!-- DEMO Pages -->
     <div id="hoffmanDemo" class="hidden">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="main-heading">James Hoffman method</h1>
-                </div>
-                <div class="col-lg-12">
-                    <h2 class="timer">00 : 00</h2>
-                </div>
-                <div class="col-lg-12 btn-timer">
-                    <button class="btn btn-primary btn-start btn-lg m-2">Start</button>
-                    <!-- <button class="btn btn-warning btn-stop">Stop</button> -->
-                    <button class="btn btn-danger btn-restart btn-lg m-2">Restart</button>
-                </div>
-                <div class="col-lg-12 instruction">
-                    <p>Pour <em class="grams">50g</em> of water to bloom</p>
-                </div>
-            </div>
+        <div class="d-flex justify-content-center align-items-center">
+            <h1 class="main-heading">James Hoffman method</h1>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+            <h2 class="timer">00 : 00</h2>
+        </div>
+        <div class="d-flex justify-content-center align-items-center btn-timer">
+            <button class="btn btn-primary btn-start btn-lg m-2">Start</button>
+            <!-- <button class="btn btn-warning btn-stop">Stop</button> -->
+            <button class="btn btn-danger btn-restart btn-lg m-2">Restart</button>
+        </div>
+        <div class="d-flex justify-content-center align-items-center instruction">
+            <p>Pour <em class="grams">50g</em> of water to bloom</p>
+        </div>
+    </div>
+
+    <div id="kasuyaDemo" class="hidden">
+        <div class="d-flex justify-content-center align-items-center">
+            <h1 class="main-heading">Tetsu Kasuya method</h1>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+            <h2 class="timer">00 : 00</h2>
+        </div>
+        <div class="d-flex justify-content-center align-items-center btn-timer">
+            <button class="btn btn-primary btn-start btn-lg m-2">Start</button>
+            <!-- <button class="btn btn-warning btn-stop">Stop</button> -->
+            <button class="btn btn-danger btn-restart btn-lg m-2">Restart</button>
+        </div>
+        <div class="d-flex justify-content-center align-items-center instruction">
+            <p>Pour <em class="grams">50g</em> of water to bloom</p>
+        </div>
+    </div>
+
+    <div id="osmoticDemo" class="hidden">
+        <div class="d-flex justify-content-center align-items-center">
+            <h1 class="main-heading">Osmotic Flow method</h1>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+            <h2 class="timer">00 : 00</h2>
+        </div>
+        <div class="d-flex justify-content-center align-items-center btn-timer">
+            <button class="btn btn-primary btn-start btn-lg m-2">Start</button>
+            <!-- <button class="btn btn-warning btn-stop">Stop</button> -->
+            <button class="btn btn-danger btn-restart btn-lg m-2">Restart</button>
+        </div>
+        <div class="d-flex justify-content-center align-items-center instruction">
+            <p>Pour <em class="grams">50g</em> of water to bloom</p>
         </div>
     </div>
 
