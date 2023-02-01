@@ -7,191 +7,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/a626817c21.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
-    <script defer src="app.js"></script>
-    <title>Brew App</title>
+    <title>Brew app DEMO</title>
 </head>
 
 <body>
-
-    <!-- navbar -->
-
     <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
-        <a href="#" class="navbar-brand">
+        <a href="index.html" class="navbar-brand">
             <i class="fa-solid fa-image"></i>
             Brew App
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item px-2">
-                    <a href="#features" class="nav-link">Featrues</a>
-                </li>
-                <li class="nav-item px-2">
-                    <a href="#pricing" class="nav-link">Pricing</a>
-                </li>
-                <li class="nav-item px-2">
-                    <a href="#footer" class="nav-link">Contact</a>
-                </li>
-            </ul>
-        </div>
     </nav>
 
-    <!-- title section -->
-    <section id="title" class="white-section">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h1 class="main-heading">Brew perfect coffee every time.</h1>
-                    <a href="demo.html"><button type="button" class="btn btn-primary">Try Demo Now!</button></a>
-                </div>
-                <div class="col-lg-6">
-                    <img src="images/phone.png" alt="title-img" class="title-img">
-                </div>
-            </div>
+    <div id="homescreen">
+        <div class="d-flex justify-content-center align-items-center">
+            <h1 class="main-heading">Welcome to brew app demo!</h1>
         </div>
-
-    </section>
-
-    <!-- tutorial section -->
-    <!-- <section id="tutorial">
-
-    </section> -->
-
-    <!-- features section -->
-    <section id="features" class="blue-section">
-        <div class="container-fluid px-1">
-            <div class="row gx-2">
-                <div class="feature-box hiddenAnim col-lg-3 m-3" >
-                    <i class="icon fa-solid fa-thumbs-up fa-4x"></i>
-                    <h2 class="feature-heading">Easy to use.</h2>
-                    <p>You can follow along while brewing</p>
-                </div>
-                <div class="feature-box hiddenAnim col-lg-3 m-3">
-                    <i class="icon fa-solid fa-scroll fa-4x"></i>
-                    <h2 class="feature-heading">Many recipes.</h2>
-                    <p>Try out award-winning recipes</p>
-                </div>
-                <div class="feature-box hiddenAnim col-lg-3 m-3">
-                    <i class="icon fa-solid fa-award fa-4x"></i>
-                    <h2 class="feature-heading">Guaranteed results.</h2>
-                    <p>Get a perfect brew everytime</p>
-                </div>
-            </div>
+        <div class="d-flex justify-content-center align-items-center">
+            <button class="btn btn-primary btn-lg btn-homescreen">Start Demo</button>
         </div>
+    </div>
 
-    </section>
-
-    <!-- testimonials (?) section-->
-    <section id="testimonials" class="white-section">
-
-        <div id="testimonial" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active container-fluid">
-                    <h2 class="testimonial-text">
-                        "The best companion for your daily coffee brewing."
-                    </h2>
-                    <i class="fa-solid fa-user fa-2x"></i>
-                    <em>We love coffee magazine</em>
-                </div>
-                <div class="carousel-item container-fluid">
-                    <h2 class="testimonial-text">
-                        "An amazing introduction into the world of coffee."
-                    </h2>
-                    <i class="fa-solid fa-user fa-2x"></i>
-                    <em>mycup.com</em>
-                </div>
-                <div class="carousel-item container-fluid">
-                    <h2 class="testimonial-text">
-                        "Easy, fun and also educational."
-                    </h2>
-                    <i class="fa-solid fa-user fa-2x"></i>
-                    <em>appreviews.test</em>
-                </div>
-            </div>
+    <div id="menu" class="hidden">
+        <div class="d-flex justify-content-center align-items-center my-5">
+            <button class="btn btn-primary btn-lg btn-menu hoffman my-5">
+                James Hoffman
+            </button>
         </div>
-
-
-    </section>
-
-    <!-- Pricing information -->
-    <section id="pricing" class="blue-section">
-        <div class="container-fluid">
-            <h2>These are the pricing plans</h2>
-            <p>Encouragement message for pricing list</p>
-
-            <div class="row">
-                <div class="pricing-column col-lg-6">
-                    <div class="card mb-4">
-                        <div class="card-header">
-                            <h3>Basic</h3>
-                        </div>
-                        <div class="d-grid card-body">
-                            <h2 class="price-text">Free</h2>
-                            <p>3 default recipes</p>
-                            <p>Unlimited App Usage</p>
-                            <p>In-app ads</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="pricing-column col-lg-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <h3>Premium</h3>
-                        </div>
-                        <div class="d-grid card-body">
-                            <h2 class="price-text">$0.99</h2>
-                            <p>All recipes</p>
-                            <p>Unlimited App Usage</p>
-                            <p>No ads</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
+        <div class="d-flex justify-content-center align-items-center my-5">
+            <button class="btn btn-primary btn-lg btn-menu kasuya my-5">
+                Tetsu Kasuya
+            </button>
         </div>
-
-    </section>
-
-    <!-- CTA section -->
-    <section id="cta" class="white-section">
-        <div class="container-fluid">
-            <h2 class="cta-text">Download the app and start brewing now!</h2>
-            <p>Sign up for a newsletter so you won't miss out on any updates!</p>
-            <div class="input-group mx-auto mb-4">
-                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-envelope"></i></span>
-                <input type="mail" class="form-control" placeholder="yourmail@example.com" aria-label="Username"
-                    aria-describedby="basic-addon1">
-            </div>
-            <button type="button" class="btn btn-primary"><i class="fa-brands fa-google-play"></i>
-                Download</button>
-            <button type="button" class="btn btn-outline-primary"><i class="fa-brands fa-app-store"></i>
-                Download</button>
-
+        <div class="d-flex justify-content-center align-items-center my-5">
+            <button class="btn btn-primary btn-lg btn-menu osmotic my-5">
+                Osmotic Flow
+            </button>
         </div>
-    </section>
+    </div>
 
-    <!-- footer -->
-    <footer class="blue-section" id="footer">
-        <div class="container-fluid">
-            <i class="footer-icon fa-brands fa-facebook"></i>
-            <i class="footer-icon fa-brands fa-twitter"></i>
-            <i class="footer-icon fa-solid fa-envelope"></i>
-            <i class="footer-icon fa-brands fa-instagram"></i>
+    <!-- Prequisites pages -->
 
-            <p>© Copyright BrewApp</p>
+    <div id="hoffmanPreq" class="hidden">
+        <div class="d-flex justify-content-center align-items-center">
+            <h1>Prequisites</h1>
         </div>
-    </footer>
+        <div class="d-flex justify-content-center align-items-center">
+            <ul class="steps">
+                <li class="step">fine grind the coffee beans</li>
+                <li class="step">rinse paper filter with hot tap water</li>
+                <li class="step">put coffee into v60</li>
+                <li class="step">dig a little mound in the middle</li>
+                <li class="step">zero your scale</li>
+                <li class="step">turn on the kettle for 100deg C</li>
+                <li class="step">start timer as soon as the kettle boiles</li>
+            </ul>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+            <button class="btn btn-primary btn-lg btn-next hoffman">Next</button>
+        </div>
+        
 
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
+    <div id="kasuyaPreq" class="hidden">
+        <p>prequisites for TETSU KASUYA recipe</p>
+        <button class="btn btn-primary btn-lg btn-next kasuya">Next</button>
+    </div>
 
+    <div id="osmoticPreq" class="hidden">
+        <p>prequisites for OSMOTIC FLOW recipe</p>
+        <button class="btn btn-primary btn-lg btn-next osmotic">Next</button>
+    </div>
+
+    <!-- DEMO Pages -->
+    <div id="hoffmanDemo" class="hidden">
+        <div class="d-flex justify-content-center align-items-center">
+            <h1 class="main-heading">James Hoffman method</h1>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+            <h2 class="timer">00 : 00</h2>
+        </div>
+        <div class="d-flex justify-content-center align-items-center btn-timer">
+            <button class="btn btn-primary btn-start btn-lg m-2">Start</button>
+            <!-- <button class="btn btn-warning btn-stop">Stop</button> -->
+            <button class="btn btn-danger btn-restart btn-lg m-2">Restart</button>
+        </div>
+        <div class="d-flex justify-content-center align-items-center instruction">
+            <p>Pour <em class="grams">50g</em> of water to bloom</p>
+        </div>
+    </div>
+
+    <div id="kasuyaDemo" class="hidden">
+        <div class="d-flex justify-content-center align-items-center">
+            <h1 class="main-heading">Tetsu Kasuya method</h1>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+            <h2 class="timer">00 : 00</h2>
+        </div>
+        <div class="d-flex justify-content-center align-items-center btn-timer">
+            <button class="btn btn-primary btn-start btn-lg m-2">Start</button>
+            <!-- <button class="btn btn-warning btn-stop">Stop</button> -->
+            <button class="btn btn-danger btn-restart btn-lg m-2">Restart</button>
+        </div>
+        <div class="d-flex justify-content-center align-items-center instruction">
+            <p>Pour <em class="grams">50g</em> of water to bloom</p>
+        </div>
+    </div>
+
+    <div id="osmoticDemo" class="hidden">
+        <div class="d-flex justify-content-center align-items-center">
+            <h1 class="main-heading">Osmotic Flow method</h1>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+            <h2 class="timer">00 : 00</h2>
+        </div>
+        <div class="d-flex justify-content-center align-items-center btn-timer">
+            <button class="btn btn-primary btn-start btn-lg m-2">Start</button>
+            <!-- <button class="btn btn-warning btn-stop">Stop</button> -->
+            <button class="btn btn-danger btn-restart btn-lg m-2">Restart</button>
+        </div>
+        <div class="d-flex justify-content-center align-items-center instruction">
+            <p>Pour <em class="grams">50g</em> of water to bloom</p>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="flow.js"></script>
+    <script src="demo.js"></script>
 </body>
 
 </html>
